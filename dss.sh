@@ -4,8 +4,8 @@
 #
 # Replace consecutive blank lines with single blank line.
 #
-# @(#) $Revision: 1.2 $
-# @(#) $Id: dss.sh,v 1.2 1999/09/27 05:36:31 chongo Exp chongo $
+# @(#) $Revision: 1.3 $
+# @(#) $Id: dss.sh,v 1.3 2004/01/13 10:23:50 chongo Exp chongo $
 # @(#) $Source: /usr/local/src/cmd/dss/RCS/dss.sh,v $
 #
 # Copyright (c) 1987 by Landon Curt Noll.  All Rights Reserved.
@@ -32,4 +32,4 @@
 #
 # Share and enjoy!
 
-sed -f /usr/local/lib/dss.sed
+sed -f /usr/local/lib/dss/dss.sed

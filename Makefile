@@ -2,8 +2,8 @@
 #
 # dss - double space compression
 #
-# @(#) $Revision: 1.1 $
-# @(#) $Id: Makefile,v 1.1 1999/09/22 02:28:33 chongo Exp chongo $
+# @(#) $Revision: 1.2 $
+# @(#) $Id: Makefile,v 1.2 1999/11/08 04:23:51 chongo Exp chongo $
 # @(#) $Source: /usr/local/src/cmd/dss/RCS/Makefile,v $
 #
 # Copyright (c) 1987 by Landon Curt Noll.  All Rights Reserved.
@@ -43,7 +43,7 @@ dss: dss.sh
 install: all dss.sed
 	${INSTALL} -m ${BINMODE} dss ${DESTBIN}
 	-mkdir -p ${DESTLIB}/dss
-	${INSTALL} -m ${BINMODE} dss.sed ${DESTLIB}
+	${INSTALL} -m ${BINMODE} dss.sed ${DESTLIB}/dss/dss.sed
 
 clean:
 
