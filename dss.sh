@@ -4,9 +4,9 @@
 #
 # Replace consecutive blank lines with single blank line.
 #
-# @(#) $Revision$
-# @(#) $Id$
-# @(#) $Source$
+# @(#) $Revision: 1.1 $
+# @(#) $Id: dss.sh,v 1.1 1999/09/26 21:53:29 chongo Exp chongo $
+# @(#) $Source: /usr/local/src/cmd/dss/RCS/dss.sh,v $
 #
 # Copyright (c) 1987 by Landon Curt Noll.  All Rights Reserved.
 #
@@ -27,5 +27,9 @@
 # USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 # OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 # PERFORMANCE OF THIS SOFTWARE.
+#
+# chongo <was here> /\oo/\
+#
+# Share and enjoy!
 
 sed -f /usr/local/lib/dss/dss.sed
