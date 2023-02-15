@@ -2,9 +2,9 @@
 #
 # dss - double space compression
 #
-# @(#) $Revision: 1.2 $
-# @(#) $Id: Makefile,v 1.2 1999/11/08 04:23:51 chongo Exp chongo $
-# @(#) $Source: /usr/local/src/cmd/dss/RCS/Makefile,v $
+# @(#) $Revision: 1.3 $
+# @(#) $Id: Makefile,v 1.3 2004/01/14 16:56:40 chongo Exp $
+# @(#) $Source: /usr/local/src/bin/dss/RCS/Makefile,v $
 #
 # Copyright (c) 1987 by Landon Curt Noll.  All Rights Reserved.
 #

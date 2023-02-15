@@ -4,9 +4,9 @@
 #
 # Replace consecutive blank lines with single blank line.
 #
-# @(#) $Revision: 1.3 $
-# @(#) $Id: dss.sh,v 1.3 2004/01/13 10:23:50 chongo Exp chongo $
-# @(#) $Source: /usr/local/src/cmd/dss/RCS/dss.sh,v $
+# @(#) $Revision: 1.4 $
+# @(#) $Id: dss.sh,v 1.4 2004/01/14 16:56:40 chongo Exp $
+# @(#) $Source: /usr/local/src/bin/dss/RCS/dss.sh,v $
 #
 # Copyright (c) 1987 by Landon Curt Noll.  All Rights Reserved.
 #
