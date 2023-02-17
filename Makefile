@@ -1,12 +1,8 @@
-#!/usr/bin/make
+#!/usr/bin/env make
 #
 # dss - double space compression
 #
-# @(#) $Revision: 1.3 $
-# @(#) $Id: Makefile,v 1.3 2004/01/14 16:56:40 chongo Exp $
-# @(#) $Source: /usr/local/src/bin/dss/RCS/Makefile,v $
-#
-# Copyright (c) 1987 by Landon Curt Noll.  All Rights Reserved.
+# Copyright (c) 1987,2023 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,
@@ -27,25 +23,29 @@
 # PERFORMANCE OF THIS SOFTWARE.
 
 
-SHELL=/bin/sh
-BINMODE=0555
-DESTBIN=/usr/local/bin
-DESTLIB=/usr/local/lib
+SHELL= bash
+BINMODE= 0555
+DESTBIN= /usr/local/bin
+DESTLIB= /usr/local/lib
 INSTALL= install
+RM= rm
+CP= cp
+CHMOD= chmod
+MKDIR= mkdir
 
 all: dss
 
 dss: dss.sh
-	-rm -f $@
-	cp $@.sh $@
-	chmod +x $@
+	${RM} -f $@
+	${CP} $@.sh $@
+	${CHMOD} +x $@
 
 install: all dss.sed
 	${INSTALL} -m ${BINMODE} dss ${DESTBIN}
-	-mkdir -p ${DESTLIB}/dss
+	${MKDIR} -p ${DESTLIB}/dss
 	${INSTALL} -m ${BINMODE} dss.sed ${DESTLIB}/dss/dss.sed
 
 clean:
 
 clobber: clean
-	-rm -f dss
+	${RM} -f dss
