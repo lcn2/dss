@@ -4,7 +4,7 @@ Replace consecutive vertical space lines with single line.
 
 For the official official GutHub repo visit:
 
-    [https://github.com/lcn2/dss](https://github.com/lcn2/dss)
+    https://github.com/lcn2/dss
 
 
 # Usage:
