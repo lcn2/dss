@@ -1,14 +1,18 @@
 #!/bin/sh -
 #
-# dss - double space compression
+# dss - double space suppression
 #
-# Replace consecutive blank lines with single blank line.
+# Replace consecutive vertical space lines with single line.
+#
+# For the GitHub repo, see:
+#
+#   https://github.com/lcn2/dss
 #
 # @(#) $Revision: 1.4 $
 # @(#) $Id: dss.sh,v 1.4 2004/01/14 16:56:40 chongo Exp $
 # @(#) $Source: /usr/local/src/bin/dss/RCS/dss.sh,v $
 #
-# Copyright (c) 1987 by Landon Curt Noll.  All Rights Reserved.
+# Copyright (c) 1987,2024 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,

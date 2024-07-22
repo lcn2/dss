@@ -1,8 +1,14 @@
 #!/usr/bin/env make
 #
-# dss - double space compression
+# dss - double space suppression
 #
-# Copyright (c) 1987,2023 by Landon Curt Noll.  All Rights Reserved.
+# Replace consecutive vertical space lines with single line.
+#
+# For the GitHub repo, see:
+#
+#   https://github.com/lcn2/dss
+#
+# Copyright (c) 1987,2023-2024 by Landon Curt Noll.  All Rights Reserved.
 #
 # Permission to use, copy, modify, and distribute this software and
 # its documentation for any purpose and without fee is hereby granted,
@@ -25,6 +31,7 @@
 
 SHELL= bash
 BINMODE= 0555
+READONLY_MODE= 0444
 DESTBIN= /usr/local/bin
 DESTLIB= /usr/local/lib
 INSTALL= install
@@ -34,16 +41,12 @@ CHMOD= chmod
 MKDIR= mkdir
 
 all: dss
+	${CHMOD} +x dss
 
-dss: dss.sh
-	${RM} -f $@
-	${CP} $@.sh $@
-	${CHMOD} +x $@
-
-install: all dss.sed
+install: all dss
 	${INSTALL} -m ${BINMODE} dss ${DESTBIN}
 	${MKDIR} -p ${DESTLIB}/dss
-	${INSTALL} -m ${BINMODE} dss.sed ${DESTLIB}/dss/dss.sed
+	${INSTALL} -m ${READONLY_MODE} dss.sed ${DESTLIB}/dss/dss.sed
 
 clean:
 
