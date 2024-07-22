@@ -51,4 +51,3 @@ install: all dss
 clean:
 
 clobber: clean
-	${RM} -f dss
