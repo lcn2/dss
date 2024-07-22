@@ -2,7 +2,7 @@
 
 Replace consecutive vertical space lines with single line.
 
-For the official official GutHub repo visit:
+For the official official GitHub repo visit:
 
     https://github.com/lcn2/dss
 
@@ -44,7 +44,7 @@ put under git control on Tue Feb 14 17:21:07 2023, converting from
 RCS to git via `rcs-fast-export`.
 
 The [dss repo](https://github.com/lcn2/dss) was put under GitHub control
-on 2023 Feb 16, and converted into a public GitHub repo on 2024 Jui 21.
+on 2023 Feb 16, and converted into a public GitHub repo on 2024 Jul 21.
 
 
 # Thank you:
