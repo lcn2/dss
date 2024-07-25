@@ -31,14 +31,14 @@ or:
 
 The `dss.sed` file and the `dss` shell script dates back
 to 1987 when the author, Landon Curt Noll, won a contest
-by creating the smallest (in byte length) known sed script
-that could replace consecutive vertical space lines with
-a single line.
+by creating the smallest (in byte length) known `sed(1)`
+script that could replace consecutive vertical space
+lines with a single line.
 
-The `dss.sed` file, the core of dss, has not changed since it
+The `dss.sed` file, the core of `dss`, has not changed since it
 was initially proposed part of the content.
 
-This code was created back in in 1987 when it was put under
+This code was created back in 1987 when it was put under
 SCCS control, then put under RCS control on Sep 22 02:28:33
 1999.  It was last modified under RCS on 2004/01/14 16:56:40.
 The code was put under git control on Tue Feb 14 17:21:07 2023,
