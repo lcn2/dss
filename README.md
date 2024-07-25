@@ -29,22 +29,24 @@ or:
 
 # History:
 
-The `dss.sed` file and the  `dss` shell script dates back to 1987
-when the author, Landon Curt Noll, won a contest for the smallest
-(byte length) sed script that could replace consecutive vertical
-space lines with single line.
+The `dss.sed` file and the `dss` shell script dates back
+to 1987 when the author, Landon Curt Noll, won a contest
+by creating the smallest (in byte length) known sed script
+that could replace consecutive vertical space lines with
+a single line.
 
 The `dss.sed` file, the core of dss, has not changed since it
 was initially proposed part of the content.
 
-The this code are created back in in 1987 when it was put under
-SCCS control, then put under RCS control on Sep 22 02:28:33 1999
-and was last RCS modified on 2004/01/14 16:56:40.  The script was
-put under git control on Tue Feb 14 17:21:07 2023, converting from
-RCS to git via `rcs-fast-export`.
+This code was created back in in 1987 when it was put under
+SCCS control, then put under RCS control on Sep 22 02:28:33
+1999.  It was last modified under RCS on 2004/01/14 16:56:40.
+The code was put under git control on Tue Feb 14 17:21:07 2023,
+converting from RCS to git via the `rcs-fast-export` tool.
 
-The [dss repo](https://github.com/lcn2/dss) was put under GitHub control
-on 2023 Feb 16, and converted into a public GitHub repo on 2024 Jul 21.
+The [dss repo](https://github.com/lcn2/dss) was put under
+GitHub control on 2023 Feb 16, and converted into a public
+GitHub repo on 2024 Jul 21.
 
 
 # Thank you:
