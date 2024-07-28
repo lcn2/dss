@@ -27,7 +27,7 @@ or:
 ```
 
 
-# Examples
+# Example:
 
 To show how `dss` works we will run a few commands to show an example file with
 consecutive blank lines and then remove them (redirecting to an out file) and
