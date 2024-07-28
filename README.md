@@ -27,6 +27,80 @@ or:
 ```
 
 
+# Examples
+
+To show how `dss` works we will run a few commands to show an example file with
+consecutive blank lines and then remove them (redirecting to an out file) and
+then update (also with `sed(1)`) to correct the text in the lines before we then
+show the updated file. The reason the text has to be updated in the output file
+is because we want to show how the number of lines is changed due to consecutive
+blank lines.
+
+## First show `example.txt`:
+
+```sh
+   cat example.txt
+```
+
+You should see:
+
+```sh
+    This is the first line.
+
+
+
+    This is the fifth line.
+```
+
+## Second run `dss` on the file, writing the output to `example.out`
+
+```sh
+    dss < example.txt > example.out
+```
+
+Here you should see no output so we will show what `example.out` looks like
+after `dss` processes it, below.
+
+## Third, show `example.out`:
+
+```sh
+    cat example.out
+```
+
+You should see:
+
+```
+    This is the first line.
+
+    This is the fifth line.
+```
+
+## Fourth, fix the text in `example.out`:
+
+As can be seen, `dss` removed the consecutive lines so the text describing the
+(now third) line is incorrect. Let's fix it:
+
+```sh
+    sed -i'' 's/fifth/third/g' example.out
+```
+
+## Finally show the contents of `example.out`
+
+```sh
+    cat example.out
+```
+
+This will show the correctly updated `example.out`:
+
+```
+    This is the first line.
+
+    This is the third line.
+```
+
+Of course you could change the order of commands but this shows how it works
+well enough.
+
 # History:
 
 The `dss.sed` file and the `dss` shell script dates back
