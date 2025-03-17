@@ -128,3 +128,8 @@ GitHub repo on 2024 Jul 21.
 Landon Curt Noll wishes to thank
 [Andrew Sharpe](https://www.linkedin.com/in/andrew-sharpe-a2817a1/)
 for inspiring this code.
+
+
+# Reporting Security Issues
+
+To report a security issue, please visit "[Reporting Security Issues](https://github.com/lcn2/dss/security/policy)".
