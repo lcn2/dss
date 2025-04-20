@@ -10,20 +10,20 @@ For the official official GitHub repo visit:
 # Usage:
 
 ```sh
-    dss < input > output
+$ dss < input > output
 ```
 
 or:
 
 ```sh
-    some | pipe | commands | dss | more | pipe | commands
+$ some | pipe | commands | dss | more | pipe | commands
 ```
 
 
 # To install:
 
 ```sh
-    make install
+$  make install
 ```
 
 
@@ -39,12 +39,12 @@ blank lines.
 ## First show `example.txt`:
 
 ```sh
-   cat example.txt
+$ cat example.txt
 ```
 
 You should see:
 
-```sh
+```
     This is the first line.
 
 
@@ -54,8 +54,8 @@ You should see:
 
 ## Second run `dss` on the file, writing the output to `example.out`
 
-```sh
-    dss < example.txt > example.out
+```
+$ dss < example.txt > example.out
 ```
 
 Here you should see no output so we will show what `example.out` looks like
@@ -64,7 +64,7 @@ after `dss` processes it, below.
 ## Third, show `example.out`:
 
 ```sh
-    cat example.out
+$ cat example.out
 ```
 
 You should see:
@@ -81,13 +81,13 @@ As can be seen, `dss` removed the consecutive lines so the text describing the
 (now third) line is incorrect. Let's fix it:
 
 ```sh
-    sed -i'' 's/fifth/third/g' example.out
+$ sed -i'' 's/fifth/third/g' example.out
 ```
 
 ## Finally show the contents of `example.out`
 
 ```sh
-    cat example.out
+$  cat example.out
 ```
 
 This will show the correctly updated `example.out`:
